@@ -169,7 +169,7 @@ class Projectile(Particle):
         # this is a faster way to construct a list than an explicit for loop
 
 
-        v_hat = np.array([np.abs(vi)/vi if vi else 0 for vi in v])
+        v_hat = np.array([np.abs(vi)/vi if vi else 0 for vi in v]) #NEED TO FIX THIS FOR THE COMPONNETS TO PROPERLY USE
         mod_v = np.sqrt(np.sum(v**2))
          
          
